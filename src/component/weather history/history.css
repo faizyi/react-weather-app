@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(224, 234, 247);
+}
+
+header {
+    padding: 10px;
+}
+
+.weather-history-container .heading {
+    box-shadow: 1px 1px 5px black;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.weather-history-container .history-data {
+    padding: 10px;
+    
+}
+
+.history-data table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    border: 1px solid #696666;
+    padding: 8px;
+}
+
+table th {
+    background-color: #79869c;
+    font-weight: bold;
+    text-align: left;
+}
+
+.no-history{
+    padding: 10px;
+}
+.no-history h2{
+    color: rgb(119, 119, 121);
+}
+.clear-history{
+    padding: 10px;
+}
+.clear-history button{
+    padding: 7px;
+    outline: none;
+    font-size: 17px;
+    border: none;
+    border: 1px solid cornflowerblue;
+    background-color: transparent;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.clear-history button:hover{
+    background-color:cornflowerblue;
+    color: white;
+}
+.clear-history.active{
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 237px) and (max-width: 335px){
+    .weather-history-container .heading h1{
+        font-size: 15px;
+    }
+    table th,
+    table td{
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 236px){
+    .weather-history-container .heading h1{
+        font-size: 15px;
+    }
+    table th,
+    table td{
+        padding: 2px;
+    }
+    table th,
+    table td{
+        font-size: 8px;
+    }
+}
